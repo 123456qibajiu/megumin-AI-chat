@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的本地惠惠</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 左侧：多会话列表侧边栏 -->
+        <aside class="sidebar">
+            <button id="newChatBtn" class="new-chat-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                新对话
+            </button>
+            <div class="session-list" id="sessionList">
+                <!-- 动态生成的对话列表 -->
+            </div>
+        </aside>
+
+        <!-- 右侧：当前聊天容器 -->
+        <div class="chat-container">
+            <!-- 顶部标题栏 -->
+            <div class="chat-header">
+                <h1> 你的本地惠惠</h1>
+                <p>独立记忆的多会话模式</p>
+            </div>
+
+            <!-- 消息显示区域 -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- 消息内容 -->
+            </div>
+
+            <!-- 输入区域 -->
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="向惠惠说些什么..."
+                        autocomplete="off"
+                    >
+                    <button id="sendBtn" class="send-button" title="发送">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

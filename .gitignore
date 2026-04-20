@@ -1,0 +1,6 @@
+node_modules/
+.env
+.DS_Store
+# 可以忽略音频文件夹里的大文件，让用户自己下载
+audio/*
+!audio/.gitkeep
